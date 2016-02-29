@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/tArquivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="/storage/emulated/0/mp3/1991 Nevermind/02 In Bloom.mp3"
+            android:textIsSelectable="true"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="nome da musica" />
+
+        <ImageView
+            android:id="@+id/mp3Image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="30dp"
+            android:background="#ffffff"
+            android:padding="30dp"
+            android:src="@mipmap/ic_img_musica" />
+
+        <TextView
+            android:id="@+id/songDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="songDuration" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onClickAcelera"
+                android:src="@drawable/ic_esquerda" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onClickPlay"
+                android:src="@drawable/ic_player" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onClickPause"
+                android:src="@drawable/ic_pause" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onClickStop"
+                android:src="@drawable/ic_stop" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onClickRetroceder"
+                android:src="@drawable/ic_direita" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onClickMostraPlayList"
+                android:src="@drawable/ic_folder" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgFolder"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="30dp"
+            android:background="#ffffff"
+            android:onClick="onClickMostraPlayList"
+            android:src="@drawable/ic_folder" />
+
+    </LinearLayout>
+</ScrollView>
